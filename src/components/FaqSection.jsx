@@ -35,7 +35,7 @@ export default function FaqSection() {
           {faqs.map((faq, idx) => (
             <div key={idx}>
               <button
-                className="w-full flex justify-between items-center py-5 px-2 text-left text-lg font-semibold text-white focus:outline-none"
+                className="w-full flex justify-between items-center py-4 px-2 text-left text-lg font-semibold text-white focus:outline-none"
                 onClick={() => setOpen(open === idx ? null : idx)}
               >
                 <span>{faq.q}</span>

@@ -37,7 +37,9 @@ const ChooseUs = () => {
   return (
     <section className="w-full bg-[#0D1524] text-white px-4 md:px-10 py-16">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose <span className="text-white">Walytic</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Why Choose <span className="text-[#00F0B5]">Walytic</span>
+        </h2>
         <p className="text-lg text-gray-300 mb-12">
           Here are all the reasons you need to start using Walytic today!
         </p>
@@ -46,7 +48,8 @@ const ChooseUs = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-[#162033] rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-b from-[#162033] to-[#1c2a44] rounded-xl p-6 border border-transparent shadow-md 
+                         hover:scale-105 hover:shadow-xl hover:border-teal-400 transition-transform duration-300 ease-in-out cursor-pointer"
             >
               <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>

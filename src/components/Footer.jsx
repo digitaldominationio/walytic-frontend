@@ -9,11 +9,13 @@ const Footer = () => {
         <div className="md:w-1/2">
           <div className="flex items-center gap-2 mb-4">
             <img src="/logo.png" alt="Walytic" className="w-10 h-10" />
-            <h2 className="text-xl font-semibold">Walytic</h2>
+            <h2 className="text-xl font-semibold text-white">Walytic</h2>
           </div>
-          <p className="text-sm text-gray-300 leading-relaxed">
+          <p className="text-sm text-gray-200 leading-relaxed">
             Send transactional WhatsApp messages to your customers using our REST APIs 
-            or from Excel file. Try out with Free 50 messages and pay as low as 
+            or directly from Excel. Start with{" "}
+            <span className="text-teal-400 font-semibold">50 free messages</span> 
+            and pay as low as{" "}
             <span className="text-teal-400 font-semibold"> $0.0025 per message.</span>
           </p>
         </div>
@@ -22,12 +24,12 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row gap-12 md:gap-20">
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <h3 className="text-lg font-semibold mb-4 text-white">Company</h3>
+            <ul className="space-y-2 text-sm">
               <li>
                 <Link 
                   to="/about" 
-                  className="hover:text-teal-400 transition no-underline decoration-none"
+                  className="text-white hover:text-teal-400 transition"
                 >
                   About
                 </Link>
@@ -35,7 +37,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/privacy-policy" 
-                  className="hover:text-teal-400 transition no-underline decoration-none"
+                  className="text-white hover:text-teal-400 transition"
                 >
                   Privacy Policy
                 </Link>
@@ -43,7 +45,7 @@ const Footer = () => {
               <li>
                 <Link 
                   to="/terms" 
-                  className="hover:text-teal-400 transition no-underline decoration-none"
+                  className="text-white hover:text-teal-400 transition"
                 >
                   Terms & Conditions
                 </Link>
@@ -53,27 +55,43 @@ const Footer = () => {
 
           {/* API Docs */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">API Documentation</h3>
-            <ul className="space-y-2 text-sm text-gray-300">
-              {[
-                "Send Message API",
-                "Send Message to Group API",
-                "Schedule Message API",
-                "Cancel Message API",
-                "History Messages API",
-                "WhatsApp Client List API",
-                "Send Message API via Python",
-                "Send Message API via Node.js",
-              ].map((doc, index) => (
-                <li key={index}>
-                  <a 
-                    href="#" 
-                    className="hover:text-teal-400 transition no-underline decoration-none"
-                  >
-                    {doc}
-                  </a>
-                </li>
-              ))}
+            <h3 className="text-lg font-semibold mb-4 text-white">API Documentation</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://app.walytic.com/integration&api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-teal-400 transition"
+                >
+                  View Full Documentation →
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-teal-400 transition">
+                  Send Message API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-teal-400 transition">
+                  Schedule Message API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-teal-400 transition">
+                  Cancel Message API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-teal-400 transition">
+                  History Messages API
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-white hover:text-teal-400 transition">
+                  WhatsApp Client List API
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -81,7 +99,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Walytic. All rights reserved.
+        © {new Date().getFullYear()} <span className="text-white">Walytic</span>. All rights reserved.
       </div>
     </footer>
   );
