@@ -9,7 +9,7 @@ import AnimatedSection from "../components/AnimatedSection";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 space-y-20">
+   <div className="min-h-screen bg-gray-900 text-gray-100 space-y-20 pt-16">
       <AnimatedSection animation="fadeUp">
         <Hero />
       </AnimatedSection>
