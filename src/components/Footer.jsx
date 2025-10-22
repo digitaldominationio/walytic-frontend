@@ -67,6 +67,7 @@ const Footer = () => {
                   View Full Documentation →
                 </a>
               </li>
+              
               {/* <li>
                 <a href="#" className="text-white hover:text-teal-400 transition">
                   Send Message API
