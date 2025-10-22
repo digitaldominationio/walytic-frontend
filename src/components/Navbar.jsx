@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Pricing", path: "/pricing" },
-    { name: "Integration", path: "https://app.walytic.com/integration&api" },
+    { name: "Integration", path: "https://walytic.neetokb.com/" },
     { name: "Contact", path: "/contact" },  // ✅ Added Contact
   ];
 

@@ -59,7 +59,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://app.walytic.com/integration&api"
+                  href="https://walytic.neetokb.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-teal-400 transition"
@@ -67,7 +67,7 @@ const Footer = () => {
                   View Full Documentation →
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-white hover:text-teal-400 transition">
                   Send Message API
                 </a>
@@ -91,7 +91,7 @@ const Footer = () => {
                 <a href="#" className="text-white hover:text-teal-400 transition">
                   WhatsApp Client List API
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
